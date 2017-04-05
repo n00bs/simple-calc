@@ -17,6 +17,7 @@ It is a console calculator.
 <li>Factorial: fact </li>
 <li>Average: avg </li>
 <li>Count: count</li>
+<li>Sum: sum</li>
 </ul>
 </li>
 <li>Enter another number if the operation was +, -, /, %, * and then hit return</li>
@@ -54,7 +55,7 @@ $ SimpleCalc
 Enter an expression separated by returns:
 10 4 25 17 5
 count
-Result: 61
+Result: 5
 </code>
 </pre>
 

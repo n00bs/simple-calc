@@ -19,16 +19,21 @@ func factorial(num: Int) -> Int {
 
 // Calculates the average of the given set of Integers
 func average(nums: [Int]) -> Int {
-    return (count(nums: nums) / nums.count)
+    return (sum(nums: nums) / count(nums: nums))
 }
 
-// Calculates the count i.e. sum of the given set of Integers
+// Calculates the count of the given sey of Integers
 func count(nums: [Int]) -> Int {
-    var count = 0
+    return nums.count
+}
+
+// Calculates the sum of the given set of Integers
+func sum(nums: [Int]) -> Int {
+    var sum = 0
     for i in 0 ..< nums.count {
-        count += nums[i]
+        sum += nums[i]
     }
-    return count
+    return sum
 }
 
 // Checks the first series of inputs and makes sure all of them are ints.
@@ -90,6 +95,8 @@ func main() {
             result = average(nums: nums)
         case "count":
             result = count(nums: nums)
+        case "sum":
+            result = sum(nums: nums)
         case "fact":
             print("Factorials can only be calculated for a single number")
             break
